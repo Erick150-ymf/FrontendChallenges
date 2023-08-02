@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+    /* Primary */
+    
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradients */
+    
+    --Light-slate-blue-background: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+    
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+
+    --Family: 'Hanken Grotesk', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 18px;
+    font-family: var(--Family);
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    color: var(--White);
+    background: linear-gradient(var(--Light-slate-blue-background), var(--Light-royal-blue-background));
+    padding: 2rem;
+    /* border-bottom-left-radius: 10%; */
+    border-radius: 0 0 10% 10%;
+}
+
+.title {
+    color: var(--Light-lavender);
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+}
+
+.circle {
+    border-radius: 100%;
+    margin: auto;
+    width: 119px;
+    height: 115px;
+    background: linear-gradient(var(--Violet-blue-circle), var(--Persian-blue-circle));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.first {
+    font-size: 43px;
+    font-weight: 700;
+}
+
+.second {
+    font-size: 14px;
+    color: var(--Light-lavender);
+    opacity: 0.7;
+}
+
+.subtitle {
+    font-size: 25px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.text {
+    width: 100%;
+    color: var(--Light-lavender);
+}
+
+/* Body */
+
+section {
+    margin: 1rem;
+    font-weight: 700;
+}
+
+.titleSum {
+    font-size: 18px;
+    color: var(--Dark-gray-blue);
+    font-weight: 800;
+}
+
+.list {
+    margin: 1rem 0;
+}
+
+.list_red, .list_red-title, .list_yellow, .list_yellow-title, .list_green, .list_green-title, .list_blue, .list_blue-title  {
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.list_red-title, .list_yellow-title, .list_green-title, .list_blue-title {
+    padding: 0;
+    width: 7rem;
+}
+
+.list_red-title {
+    color: var(--Light-red);
+}
+
+.list_yellow-title {
+    color: var(--Orangey-yellow);
+}
+
+.list_green-title {
+    color: var(--Green-teal);
+}
+
+.list_blue-title {
+    color: var(--Cobalt-blue);
+}
+
+.list_blue, .list_green, .list_red, .list_yellow {
+    margin: 1rem 0;
+    height: 60px;
+    border-radius: 15px;
+}
+
+.list_red {
+    background-color: rgb(255, 242, 243);
+}
+.list_yellow{
+    background-color: rgb(255, 251, 242);
+}
+.list_green {
+    background-color: rgba(242, 251, 250);
+}
+.list_blue{
+    background-color: rgb(243, 243, 253);
+}
+
+.list_text {
+    width: 70px;
+}
+
+span {
+    color: var(--Light-lavender);
+}
+
+button {
+    margin: auto;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--Dark-gray-blue);
+    color: var(--White);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(var(--Light-slate-blue-background), var(--Light-royal-blue-background));
+}
+
+
+
+@media screen and (min-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
+    header {
+        width: 295px;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    .circle {
+        width: 170px;
+        height: 174px;
+    }
+    .first{
+        font-size: 63px;
+    }
+    .second{
+        font-size: 18px;
+    }
+    section {
+        width: 305.5px;
+        margin: 2rem;
+    }
+    main {
+        display: flex;
+        margin: 4.5rem 1rem;
+        justify-content: space-evenly;
+    }
+    .title {
+        font-size: 23px;
+    }
+    .text {
+        width: 85%;
+        margin: auto;
+    }
+    button {
+        border-radius: 50px;
+    }
+}
