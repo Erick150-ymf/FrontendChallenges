@@ -1,0 +1,39 @@
+:root {
+    /* Gradients */
+    
+    --Light-slate-blue-background: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(var(--Violet-blue-circle),rgb(0, 81, 255));
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    height: 5rem;
+    color: white;
+}
+
+.subSection {
+    display: flex;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+.font {
+    width: 100%;
+    height: 100%;
+}
