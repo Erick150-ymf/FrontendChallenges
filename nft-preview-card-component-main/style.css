@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+        /* Colors */
+
+    /* Primary */
+
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /* Neutral */
+
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+
+        /* Typography */
+
+    /* Body Copy */
+
+    --Font-size-paragraph: 18px;
+
+    /* Font */
+
+    --Family: 'Outfit', sans-serif;
+    --Weights: 300, 400, 600;
+}
+
+body {
+    background: var(--Very-dark-blue-main-BG);
+}
+
+main {
+    background: var(--Very-dark-blue-card-BG);
+    padding: 1.5em !important;
+}
+
+.img {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.title, span {
+    color: var(--White);
+    font-size: 20px;
+    width: 100%;
+}
+
+.text {
+    font-weight: var(--Weights);
+    font-size: 14.5px;
+    color: var(--Soft-blue);
+}
+
+.dates {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--Very-dark-blue-line);
+}
+
+.ETH, .time {
+    display: flex;
+    place-items: center;
+    width: 33%;
+    justify-content: space-between;
+    height: 3rem;
+}
+
+.ETH {
+    width: 32%;
+}
+
+.ETH .icon {
+    width: 12%;
+    height: 36%;
+}
+
+.icon {
+    width: 17%;
+    height: 30%;
+}
+
+.ETH_text, .time_text {
+    font-size: 14px;
+}
+
+.ETH_text {
+    color: var(--Cyan);
+}
+
+.time_text {
+    color: var(--Soft-blue);
+}
+
+.user {
+    display: flex;
+    place-items: center;
+    width: 100%;
+    gap: 0.7em;
+}
+
+span:hover, .title:hover {
+    cursor: pointer;
+    transition: all 0.3s;
+    color: var(--Cyan);
+}
+
+.hover{
+    width: 249.38px;
+    height: 254.73px;
+    position: absolute;
+    top: 73px;
+    border-radius: 10px;
+    background: rgba(0, 255, 247, 0.6);
+    background-image: url(./images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hover {
+    display: none;
+}
+
+.img:hover {
+    cursor: pointer;
+    .hover {
+        display: block;
+    }
+}
+
+.profile {
+    width: 12%;
+    border-radius: 100%;
+    border: 1px solid var(--White);
+}
+
+.user_text, span {
+    font-size: 13px;
+    font-weight: var(--Weights);
+}
+
+.user_text {
+    color: var(--Soft-blue);
+}
