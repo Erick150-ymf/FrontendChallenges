@@ -77,7 +77,6 @@ export const project8 = new Projects(
     '3-Column Card Component',
     '3-column-preview-card-component-main',
     '8.webp',
-    // 'NFT Card Component'
     '3-Column Card Component',
 );
 
