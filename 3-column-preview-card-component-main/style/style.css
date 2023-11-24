@@ -36,9 +36,9 @@ section {
     align-items: center;
 }
 .sedans, .suvs, .luxury {
-    height: 60vh;
+    height: 365px;
     padding: 2em 2.1em;
-    max-width: 80vw;
+    max-width: 290px;
 }
 .sedans {
     background-color: var(--Bright-orange);
