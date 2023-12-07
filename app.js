@@ -9,7 +9,7 @@ let rendering = [
     project6.render(),
     project7.render(),
     project8.render(),
-    // project9.render(),
+    project9.render(),
     // project10.render(),
     // project11.render(),
     // project12.render(),
