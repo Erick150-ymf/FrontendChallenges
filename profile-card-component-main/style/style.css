@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root {
+        /* Colors */
+    /* Primary */
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    /* Neutral */
+    --Dark-gray: hsl(0, 0%, 59%);
+        /* Typography */
+    /* Font */
+    --Family:'Kumbh Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 18px;
+    background-color: var(--Dark-cyan);
+    font-family: var(--Family);
+    margin: 0 1em;
+    overflow: hidden;
+}
+
+main {
+    position: sticky;
+    z-index: 10;
+    height: 70vh;
+    max-width: 25rem;
+    background-color: white;
+    border-radius: 15px;
+    margin: 4em auto;
+}
+
+/* .img-top {
+    position: absolute;
+    bottom: 15rem;
+    right: 14rem;
+    z-index: 0;
+} */
+
+.img-bottom {
+    position: absolute;
+    left: 45rem;
+    top: 14rem;
+}
+
+.div {
+    height: 26vh;
+}
+
+.div img {
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+}
+
+.information {
+    position: relative;
+    bottom: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.information div {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.information div h1 {
+    color: var(--Very-dark-desaturated-blue);
+    font-size: 24px;
+    margin-bottom: 0.3em;
+}
+
+span {
+    margin-left: 0.5rem;
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+}
+
+p {
+    color: var(--Dark-grayish-blue);
+}
+
+.profile {
+    border: 0.4rem solid white;
+    border-radius: 100%;
+}
+
+.numbers {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    border-top: 1px solid hsl(227deg 10% 46% / 32%);
+}
+
+.dates {
+    padding-top: 1.5em;
+}
+
+.dates h2 {
+    color: var(--Very-dark-desaturated-blue);
+    font-size: 24px;
+}
+
+.dates p {
+    font-size: 12px;
+    margin-top: 0.5em;
+    letter-spacing: 3px;
+}
