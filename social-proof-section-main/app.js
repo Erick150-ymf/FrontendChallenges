@@ -11,13 +11,13 @@ class Aside {
         const sectionElement = document.createElement('section');
         sectionElement.classList.add(this.sectionClass);
         sectionElement.innerHTML = `
-                <div class="star">
+                <ul class="star">
                     <li><img src="./images/icon-star.svg" alt="start"></li>
                     <li><img src="./images/icon-star.svg" alt="start"></li>
                     <li><img src="./images/icon-star.svg" alt="start"></li>
                     <li><img src="./images/icon-star.svg" alt="start"></li>
                     <li><img src="./images/icon-star.svg" alt="start"></li>
-                </div>
+                </ul>
                 <p class="rated">Rated 5 Stars in ${this.text}</p>
         `;
         asideElement.appendChild(sectionElement);
