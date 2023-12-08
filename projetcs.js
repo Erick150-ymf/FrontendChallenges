@@ -88,10 +88,10 @@ export const project9 = new Projects(
 );
 
 export const project10 = new Projects(
-    'NFT Card Component',
-    'nft-preview-card-component-main',
+    'Social proof section',
+    'social-proof-section-main',
     '10.webp',
-    'NFT Card Component'
+    'Social proof section'
 );
 
 export const project11 = new Projects(
