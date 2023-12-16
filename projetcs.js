@@ -95,10 +95,10 @@ export const project10 = new Projects(
 );
 
 export const project11 = new Projects(
-    'NFT Card Component',
-    'nft-preview-card-component-main',
+    'Article previw component',
+    'article-preview-component-main',
     '11.webp',
-    'NFT Card Component'
+    'Article previw component'
 );
 
 export const project12 = new Projects(
