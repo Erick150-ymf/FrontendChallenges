@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+:root {
+        /* Colors */
+    /* Primary */
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    /* Neutral */
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family:  'Poppins', sans-serif;
+}
+
+.general {
+    padding: 3rem 2rem;
+    width: 375px;
+    margin: auto;
+}
+header {
+    text-align: center;
+}
+h1 {
+    font-weight: 200;
+    color: var(--Very-Dark-Blue);
+}
+h2 {
+    color: var(--Very-Dark-Blue);
+}
+h1, h2 {
+    font-size: 24px;
+}
+.textHeader {
+    margin-top: 1rem;
+    color: var(--Grayish-Blue);
+}
+
+/* target */
+main {
+    display: grid;
+    grid-gap: 2rem;
+    margin-top: 4rem;
+}
+.search, .house, .ligth, .calculator {
+    border-radius: 5px;
+    box-shadow: 0 2px 15px 0 var(--Grayish-Blue);
+    width: 311px;
+}
+.colorSearch, .colorHouse, .colorLigth, .colorCalculator {
+    width: auto;
+    height: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.colorSearch {
+    background-color: var(--Cyan);
+}
+.colorHouse {
+    background-color: var(--Red);
+}
+.colorLigth {
+    background-color: var(--Orange);
+}
+.colorCalculator {
+    background-color: var(--Blue);
+}
+/* text */
+.information {
+    padding: 1.5rem;
+    text-align: start;
+}
+h3 {
+    color: var(--Very-Dark-Blue);
+    font-size: 22px;
+}
+.none, .width {
+    width: 100%;
+    color: var(--Grayish-Blue);
+}
+.none {
+    font-size: 13px;
+}
+.width {
+    font-size: 14px;
+}
+
+picture {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+}
+
+
+@media (width >= 1024px) {
+    .general {
+        width: 100%;
+    }
+    header {
+        width: 34rem;
+        margin: auto;
+    }
+    h1, h2 {
+        font-size: 36px;
+    }
+
+    /* target */
+    main {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.5rem;
+        width: 980px;
+        margin: 4rem auto;
+    }
+    /* row */
+    .search, .calculator {
+        position: relative;
+        bottom: 7rem;
+    }
+    .search {
+        grid-row: 2/3;
+        margin-bottom: 1rem;
+    }
+    .calculator {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    /* colum */
+    .house {
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+    .ligth {
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+}
