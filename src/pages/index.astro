@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+---
+
+<Layout title="Frontend Mentor by Erick">
+  <main>
+    <Header
+      title="My challenges"
+      class="fixed w-full text-center grid place-items-center h-20 text-white text-3xl"
+    />
+    <section>
+      <h2>All challenges</h2>
+      <article
+        class="subSection grid gap-6 text-center auto-rows-auto grid-cols-[repeat(2_minmax(100px,_1fr))] md:grid-cols-[repeat(auto-fill_minmax(270px,_1fr))]"
+      >
+      </article>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+</style>
