@@ -18,10 +18,11 @@ const { title, class: className } = Astro.props;
 </style>
 <header>
   <h1 class={className}>{title}</h1>
-  <Image
-    classPic=""
-    classImg="w-[95%] h-[90%] object-contain"
-    alt="mi setup"
-    img="img-challenges/Captura.webp"
-  />
+  <picture>
+    <Image
+      classImg="w-full h-full"
+      alt="mi setup"
+      img="img-challenges/Captura.webp"
+    />
+  </picture>
 </header>

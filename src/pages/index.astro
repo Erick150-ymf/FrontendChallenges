@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
+import Article from "../components/Article.astro";
 ---
 
 <Layout title="Frontend Mentor by Erick">
@@ -10,12 +11,12 @@ import Header from "../components/Header.astro";
       class="fixed w-full text-center grid place-items-center h-20 text-white text-3xl"
     />
     <section>
-      <h2>All challenges</h2>
-      <article
+      <h2 class="text-2xl">All challenges</h2>
+      <Article
         class="subSection grid gap-6 text-center auto-rows-auto grid-cols-[repeat(2_minmax(100px,_1fr))] md:grid-cols-[repeat(auto-fill_minmax(270px,_1fr))]"
-      >
-      </article>
+      />
     </section>
+    <br /><br /><br /><br /><br />
   </main>
 </Layout>
 

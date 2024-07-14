@@ -1,0 +1,14 @@
+---
+// COmponents
+import Projects from "./react/Projects.tsx";
+
+// Types and Interfaces
+interface Props {
+  class: string;
+}
+const { class: classArt } = Astro.props;
+---
+
+<article class={classArt}>
+  <Projects />
+</article>
