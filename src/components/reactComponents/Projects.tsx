@@ -21,7 +21,7 @@ class Projects extends Component<Image> {
         <p>{title}</p>
         <a href={aHref}>
           <img
-            src={`img-challenges/tarea${imgSrc}`}
+            src={`cover-pages/tarea${imgSrc}`}
             alt={imgAlt}
             className="w-[95%] h-[90%] object-contain"
           />
