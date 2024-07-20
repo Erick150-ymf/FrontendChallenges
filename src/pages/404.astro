@@ -1,0 +1,22 @@
+---
+import Image from "../components/Image.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="404 Not Found">
+  <main
+    class="flex mx-4 my-auto place-content-center place-items-center h-[100vh] flex-col gap-4"
+  >
+    <h1>Esta página no existe</h1>
+    <Image
+      img="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExenkxNmp4eGZodGtrMmlyOG5vZGlyOWZkZjhsdzd1MDJwMmFkcm1qaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FYUnDtud95kMKCovAY/giphy.webp"
+      alt="page not fount"
+      classImg="size-72"
+    />
+    <button
+      class="border-none bg-[#fef08ae6] opacity-50 text-black font-semibold rounded-2xl w-32 h-8 hover:opacity-100"
+    >
+      <a href="/">Volver al inicio</a>
+    </button>
+  </main>
+</Layout>

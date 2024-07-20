@@ -1,0 +1,144 @@
+---
+import Image from "../../components/Image.astro";
+import SumaryComponents from "../../components/challenges/Sumary-Component.astro";
+import LayoutChallenges from "../../layouts/LayoutChallenges.astro";
+---
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+  :root {
+    --Light-slate-blue-background: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+
+    --White: hwb(0 100% 0%);
+
+    --Family: "Hanken Grotesk", sans-serif;
+  }
+  body {
+    font-size: 18px;
+    font-family: var(--Family);
+  }
+  header {
+    text-align: center;
+    color: var(--White);
+    background: linear-gradient(
+      var(--Light-slate-blue-background),
+      var(--Light-royal-blue-background)
+    );
+    padding: 2rem;
+    border-radius: 0 0 10% 10%;
+  }
+  header div {
+    background: linear-gradient(
+      var(--Violet-blue-circle),
+      var(--Persian-blue-circle)
+    );
+  }
+
+  button:hover {
+    background: linear-gradient(
+      var(--Light-slate-blue-background),
+      var(--Light-royal-blue-background)
+    );
+  }
+
+  @media screen and (min-width: 768px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      place-items: center;
+    }
+    header {
+      width: 355px;
+      border-radius: 25px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+</style>
+
+<LayoutChallenges title="Results summary component">
+  <main class="md:flex md:my-[4.5rem] md:mx-4 justify-evenly">
+    <!-- Result -->
+    <header>
+      <h1 class="text-[#c8c7ff] text-lg mb-6 font-bold md:text-2xl">
+        Your Result
+      </h1>
+      <div
+        class="rounded-full m-auto w-[119px] h-[115px] flex flex-col justify-center md:w-[170px] md:h-[174px]"
+      >
+        <p class="text-[43px] font-bold md:text-[63px]">76</p>
+        <p class="text-sm text-[#c8c7ff] opacity-70 md:text-lg">of 100</p>
+      </div>
+      <h2 class="text-[25px] mt-4 mb-2">Great</h2>
+      <p class="w-full text-[#c8c7ff] md:w-[85%] md:m-auto">
+        You scored higher than 65% of the people who have taken these tests.
+      </p>
+    </header>
+
+    <!-- Information -->
+    <section class="m-4 font-bold md:w-[305.5px] md:m-8">
+      <h3 class="">Summary</h3>
+      <div class="mx-0 my-4">
+        <SumaryComponents
+          firstClassdiv="bg-[#fff2f3]"
+          secondClassdiv="text-[#ff5757]"
+          text="Reaction"
+          numbers=""
+          num="80"
+        >
+          <Image
+            img="/img-of-challenges/first/icon-reaction.svg"
+            alt="reaction"
+          />
+        </SumaryComponents>
+        <SumaryComponents
+          firstClassdiv="bg-[#fffbf2]"
+          secondClassdiv="text-[#ffb01f]"
+          text="Memory"
+          numbers=""
+          num="92"
+        >
+          <Image
+            img="/img-of-challenges/first/icon-memory.svg"
+            alt="reaction"
+          />
+        </SumaryComponents>
+        <SumaryComponents
+          firstClassdiv="bg-[#f2fbfa]"
+          secondClassdiv="text-[#00bd91]"
+          text="Verbal"
+          numbers=""
+          num="61"
+        >
+          <Image
+            img="/img-of-challenges/first/icon-verbal.svg"
+            alt="reaction"
+          />
+        </SumaryComponents>
+        <SumaryComponents
+          firstClassdiv="bg-[#f3f3fd]"
+          secondClassdiv="text-[#1125d4]"
+          text="Visual"
+          numbers=""
+          num="72"
+        >
+          <Image
+            img="/img-of-challenges/first/icon-visual.svg"
+            alt="reaction"
+          />
+        </SumaryComponents>
+      </div>
+      <button
+        class="m-auto w-full h-[60px] text-lg rounded-[15px] border-none bg-[#303b5a] text-[#ffffff] font-bold cursor-pointer md:rounded-[50px]"
+        >Continue</button
+      >
+    </section>
+  </main>
+</LayoutChallenges>
